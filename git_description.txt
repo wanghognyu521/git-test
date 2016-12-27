@@ -29,13 +29,13 @@ fffff
 	* 创建一个叫做“feature_x”的分支，并切换过去 : git checkout -b feature_x
 	* 创建新文件(x.txt),并添加提交: git add * --->git commit -m "new x file"
 	* 切换回主分支 : git checkout master
-	* 推送到远程仓库: git push origin feature_x
-	* 删掉新建的分支 : git branch -D feature_x
+		* 推送到远程仓库: git push origin feature_x，推送分支时候要进入到分支的cmd命令进行推送
+	* 删掉新建的分支 : git branch -D feature_x，删除分支的时候要进入到主分支cmd命令进行删除
 	* 
 * 更新与合并
 	* 将远程最新版本拉到本地: git pull origin master
-	* 比较2个分支版本的区别: git diff <source_branch> <target_branch>
-	* 合并分支: git merge <branch>
+	* 比较2个分支版本的区别: git diff <source_branch> <target_branch>,比较区别的时候，不需要push分支修改的内容，只需要commit就可以，然后回到主分支进行比较
+	* 合并分支: git merge <branch>，合并分支的时候，只需要在主分支cmd命令行里，merge分支内容
 	* 在更新或合并时可能会出现冲突, 解决冲突
 		* 打开文件修改文件内容
 		* git add *
